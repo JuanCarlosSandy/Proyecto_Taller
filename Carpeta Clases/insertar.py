@@ -1,5 +1,5 @@
 from Comida import *
-from conexion import *
+from conexcionInsertar import *
 
 class Restaurant:
     def __init__(self) -> None:
@@ -22,7 +22,8 @@ class Restaurant:
     def abrirRestauran(self):
         estado = True
         while estado == True:
-            opc = self.menuAdminPLato()
+            print("[1].. INSERTAR PLATOS \n[0].. Salir")
+            opc = int(input(">>  "))
             if opc == 1:
                 self.resigistroComida()
                 self.enviarDatosComida()
