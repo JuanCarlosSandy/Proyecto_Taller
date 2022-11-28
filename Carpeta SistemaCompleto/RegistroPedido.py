@@ -30,6 +30,7 @@ class Pedidos():
         input("ENTER PARA CONTINUAR")
 
     def actualizarPedido(self):
+        self.pedido.mostrarPedido()
         id = int(input("id del Pedido: "))
         newComida = input("Nueva Comida: ")
         newCambio = input("Nuevos Cambios: ")
@@ -41,6 +42,7 @@ class Pedidos():
         input("ENTER PARA CONTINUAR")
 
     def eliminarPedido(self):
+        self.pedido.mostrarPedido()
         idPedido = int(input("Id del Pedido que desea eliminar: "))
         self.pedido.eliminarPedido(idPedido)
         print("="*20)

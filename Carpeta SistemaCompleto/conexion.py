@@ -75,12 +75,14 @@ class Orden:
         self.coleccion.insert_one(documento)
 
     def mostrarPedido(self):
+        system("cls")
         contador = 1
         for documento in self.coleccion.find():
-            print("PEDIDO #",contador)
+            print("="*4,"PEDIDO #",contador,"="*4)
             print("idPedido: "+str(documento["idPedido"])+"\nNombre del cliente: "+documento["nombreCliente"]+"\nComida: "+documento["Comida"]+"\nNota: "+documento["Nota"]+"\nLlevar o Mesa: "+documento["dondeConsume"])
-            print("="*40)
             contador += 1
+            print("="*40)
+        input("ENTER PA CONTINUAR")
 
     def actualizarPedido(self,idPedido,nombreComida, nota, dondeConsume):
         self.coleccion.update_one({"idPedido":idPedido},{"$set":{"Comida":nombreComida,"Nota":nota,"dondeConsume":dondeConsume}})
