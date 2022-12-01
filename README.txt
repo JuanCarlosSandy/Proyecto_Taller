@@ -16,3 +16,8 @@ Tambien necesitas instalar PYMONGO, eso lo haces en tu consola cmd:
 Windows: pip install pymongo
 
 y ejecutas el achivo Main.py
+Para poder inicar como ADMINISTRADOR la cuenta es:
+Usuario: juan
+contraseña: 123abc
+
+y para usuario si eres nuevo te registras y inicas sesion
