@@ -1,5 +1,5 @@
-from pedido import *
-from conexion import *
+from CarpetaClases.pedido import *
+from CarpetaBD.conexion import *
 
 class Pedidos():
     def __init__(self) -> None:
@@ -10,7 +10,7 @@ class Pedidos():
         id = int(input("Id Pedido: "))
         user = input("Nombre: ")
         comida = input("Comida: ")
-        cambios = input("Nota: ")
+        cambios = input("Personalizar pedido: ")
         dondeconsume = input("Para llevar o Mesa: ")
         pedido = Pedido(id, user, comida, cambios, dondeconsume)
         self.listaPedidos.append(pedido)
@@ -30,7 +30,6 @@ class Pedidos():
         input("ENTER PARA CONTINUAR")
 
     def actualizarPedido(self):
-        self.pedido.mostrarPedido()
         id = int(input("id del Pedido: "))
         newComida = input("Nueva Comida: ")
         newCambio = input("Nuevos Cambios: ")
@@ -42,7 +41,6 @@ class Pedidos():
         input("ENTER PARA CONTINUAR")
 
     def eliminarPedido(self):
-        self.pedido.mostrarPedido()
         idPedido = int(input("Id del Pedido que desea eliminar: "))
         self.pedido.eliminarPedido(idPedido)
         print("="*20)

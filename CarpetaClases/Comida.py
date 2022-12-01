@@ -17,4 +17,3 @@ class Comida:
 
     def __str__(self) -> str:
         return 'id Comida: '+str(self.idComida)+'\nNombre del Plato: '+self.nombreComida
-        
