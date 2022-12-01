@@ -118,18 +118,21 @@ class Restaurante:
                                 elif opcionUser == 2:
                                     self.verfood.mostrarMenu()
                                     print("="*40)
+                                    self.verPedido.mostrarPedido()
                                     self.pedido.registrarPedido()
                                     self.pedido.enviarDatosPedido()
                                     opcionUser = self.menuCliente()
                                 elif opcionUser == 3:
                                     self.verPedido.mostrarPedido()
-                                    tiempoEspera=input("==ENTER=")
+                                    tiempoEspera=input("==ENTER=¡")
                                     opcionUser = self.menuCliente()
                                     input("[ENTER]")
                                 elif opcionUser == 4:
+                                    self.verPedido.mostrarPedido()
                                     self.pedido.actualizarPedido()
                                     opcionUser = self.menuCliente()
                                 elif opcionUser == 5:
+                                    self.verPedido.mostrarPedido()
                                     self.pedido.eliminarPedido()
                                     opcionUser = self.menuCliente()
                         except:

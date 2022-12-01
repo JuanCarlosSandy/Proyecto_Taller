@@ -107,6 +107,7 @@ class Orden:
         self.coleccion.insert_one(documento)
 
     def mostrarPedido(self):
+        system("cls")
         contador = 1
         for documento in self.coleccion.find():
             print("PEDIDO #",contador)
