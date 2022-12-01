@@ -1,5 +1,5 @@
-from Usuario import *
-from conexion import *
+from CarpetaClases.Usuario import *
+from CarpetaBD.conexion import *
 
 class Users:
     def __init__(self) -> None:
@@ -19,7 +19,7 @@ class Users:
             self.usuarios.crearUsuario(usuario, contraseña)
         self.listaUsuario.clear()
 
-#esto terminalo liz
+
     '''def verificarLoginUser(self):
         posi = False
         usuario = input("Usuario: ")

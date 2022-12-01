@@ -10,9 +10,14 @@ Instalas el BD y para poder activar tienen que ir a tu buscador y seguir esto pa
    C:\Program Files\MongoDB\Server\6.0\bin
 5. Acepatr y Aceptar
 
-Habres PowerShell y escribes mongod y se abre el servidor de MongoDB
+Abres PowerShell y escribes mongod y se abre el servidor de MongoDB
 
 Tambien necesitas instalar PYMONGO, eso lo haces en tu consola cmd:
 Windows: pip install pymongo
 
 y ejecutas el achivo Main.py
+Para poder inicar como ADMINISTRADOR la cuenta es:
+Usuario: juan
+contraseña: 123abc
+
+y para usuario si eres nuevo te registras y inicas sesion

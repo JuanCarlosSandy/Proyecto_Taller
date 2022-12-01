@@ -22,4 +22,4 @@ class Pedido():
         return self.dondeconsume
 
     def __str__(self) -> str:
-        return 'Id: '+str(self.idPedido)+'\nNombre: '+self.nombre+'\nComida: '+'\nNota: '+self.cambios+'\nDonde Consume: '+self.dondeconsume
+        return 'Id: '+str(self.idPedido)+'\nNombre: '+self.nombre+'\nComida: '+'\nPersonalizar pedido: '+self.cambios+'\nDonde Consume: '+self.dondeconsume

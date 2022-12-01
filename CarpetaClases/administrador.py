@@ -1,4 +1,4 @@
-from Usuario import *
+from CarpetaClases.Usuario import *
 
 class Admin(Usuario):
     def __init__(self, usuario='juan', contraseña='123abc') -> None:
